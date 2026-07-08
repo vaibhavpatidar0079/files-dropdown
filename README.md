@@ -1,105 +1,116 @@
 # 📁 Files Dropdown (GNOME Shell Extension)
 
-![Extension Preview](preview.png)
+```{=html}
+<p align="center">
+```
+`<img src="preview.png" alt="Files Dropdown Preview" width="900">`{=html}
+```{=html}
+</p>
+```
+Stop digging through windows to find your files. **Files Dropdown**
+transforms your GNOME top panel into a high-speed portal to your entire
+file system.
 
-A lightning-fast, highly customizable GNOME Shell extension that brings
-your file system and bookmarks directly to the top panel.
+Designed for speed and fluidity, this extension lets you navigate to the
+exact document, video, or project you need in seconds---without ever
+opening a file manager.
 
-Navigate deeply nested directories through fluid, cascading menus
-without ever opening a separate file manager window. Built from the
-ground up for modern GNOME (45+) with asynchronous file fetching and
-hardware-accelerated animations.
+------------------------------------------------------------------------
 
-## ✨ Features
+## ✨ Why You'll Love It
 
--   **Seamless Navigation:** Infinite cascading submenus to browse your
-    entire file system directly from the panel.
--   **Smart Integration:** Automatically loads your GTK/Nautilus
-    Bookmarks and Home directory by default.
--   **Zero Lag:** Uses asynchronous `Gio` file enumeration. Even folders
-    with thousands of files won't freeze your GNOME Shell.
--   **Smart Positioning:** Submenus automatically detect monitor edges
-    and dynamically adjust their opening direction (left/right) to keep
-    your files on-screen.
--   **Native Interactions:**
-    -   **Left-Click:** Opens the file or folder in your default
-        application.
-    -   **Right-Click:** Opens the item's Properties dialog (allowing
-        access to the **Open With** menu).
--   **Deep Customization:** Features a modern Libadwaita preferences
-    window allowing you to customize:
-    -   Dimensions, padding, and margins.
-    -   Typography (integration with native GNOME font dialog).
-    -   Colors, opacities, and hover state animations.
-    -   Menu positioning, offsets, and drop shadows.
-    -   Open/Close delays and transition speeds.
+### 🚀 Glide Through Your Folders
+
+Hover over a folder and its submenu opens instantly. Browse directories
+infinitely deep through smooth cascading menus without repeatedly
+clicking.
+
+### 🎯 Stay Focused
+
+Launch files, open projects, or inspect file properties directly from
+the top panel. Your **Home** folder and **GTK/Nautilus Bookmarks** are
+available immediately.
+
+### ⚡ Fast, Even With Huge Folders
+
+Built for modern GNOME using asynchronous Gio file enumeration and
+hardware-accelerated animations. Even folders containing thousands of
+files won't freeze GNOME Shell.
+
+### 🎨 Make It Yours
+
+Customize nearly everything:
+
+-   Menu dimensions, spacing and border radius
+-   Fonts
+-   Colors and opacity
+-   Hover animations
+-   Shadows
+-   Menu position and offsets
+-   Open/Close delays and animation speed
+
+------------------------------------------------------------------------
 
 ## 📦 Installation
 
-### Method 1: GNOME Extensions Website (Recommended)
+### Method 1 --- GNOME Extensions (Recommended)
 
-The easiest way to install is directly from the GNOME Extensions
-website:
+After the extension is approved and published on
+**extensions.gnome.org**, you'll be able to install it with a single
+click.
 
-1.  Go to **Files Dropdown** on **extensions.gnome.org** *(Note: Link
-    will be active once approved).*
-2.  Toggle the switch to **ON**.
+> **Note:** The store link is intentionally omitted until approval
+> because it does not exist yet.
 
-### Method 2: Manual Installation (GitHub)
+### Method 2 --- Manual Installation
 
-If you want to test the latest features or install from source:
+Clone the repository:
 
 ``` bash
-git clone https://github.com/vaibhavpatidar0079/files-dropdown.git ~/.local/
+git clone https://github.com/vaibhavpatidar0079/files-dropdown.git
 ```
 
-``` bash
-cd ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.g
-```
+Copy the extension into your local extensions directory:
 
 ``` bash
-glib-compile-schemas schemas/
+mkdir -p ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com
+cp -r files-dropdown/* ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com/
+```
+
+Compile the schemas:
+
+``` bash
+glib-compile-schemas ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com/schemas
 ```
 
 Restart GNOME Shell:
 
 -   **Wayland:** Log out and log back in.
--   **X11:** Press `Alt + F2`, type `r`, and press `Enter`.
+-   **X11:** Press `Alt + F2`, type `r`, then press **Enter**.
 
-Enable the extension via the **Extensions** app or **GNOME Tweaks**.
+Enable **Files Dropdown** using the **Extensions** application.
 
-## ⚙️ Compatibility
+------------------------------------------------------------------------
 
--   **GNOME Shell:** 45, 46, 47, 48, 49, 50
--   **Architecture:** Uses modern ECMAScript Modules (ESM) required by
-    GNOME 45+.
+## 🖥️ Compatibility
 
-## ❤️ Contributing
+-   GNOME Shell **45--50**
+-   ECMAScript Modules (ESM)
 
-Contributions, issues, and feature requests are welcome! Feel free to
-check the issues page.
+------------------------------------------------------------------------
 
-1.  Fork the Project
-2.  Create your Feature Branch
+## 🤝 Contributing
 
-``` bash
-git checkout -b feature/AmazingFeature
-```
+Contributions, bug reports and feature requests are always welcome.
 
-3.  Commit your Changes
-
-``` bash
-git commit -m 'Add some AmazingFeature'
-```
-
-4.  Push to the Branch
-
-``` bash
-git push origin feature/AmazingFeature
-```
-
+1.  Fork the repository
+2.  Create a feature branch
+3.  Commit your changes
+4.  Push your branch
 5.  Open a Pull Request
+
+------------------------------------------------------------------------
 
 ## 📝 License
 
-Distributed under the GNU General Public License v3.0.
+Licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
