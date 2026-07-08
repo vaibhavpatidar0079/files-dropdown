@@ -1,116 +1,88 @@
 # 📁 Files Dropdown (GNOME Shell Extension)
 
-```{=html}
 <p align="center">
-```
-`<img src="preview.png" alt="Files Dropdown Preview" width="900">`{=html}
-```{=html}
+  <img src="preview.png" alt="Files Dropdown Preview" width="900">
 </p>
-```
-Stop digging through windows to find your files. **Files Dropdown**
-transforms your GNOME top panel into a high-speed portal to your entire
-file system.
 
-Designed for speed and fluidity, this extension lets you navigate to the
-exact document, video, or project you need in seconds---without ever
-opening a file manager.
+**Files Dropdown** brings your file system directly to the GNOME top panel, letting you browse folders and launch files through fast, cascading menus—without opening a file manager.
 
-------------------------------------------------------------------------
+Designed for modern GNOME, it combines asynchronous file loading, smooth animations, and extensive customization to make navigating your files feel effortless.
 
-## ✨ Why You'll Love It
+---
 
-### 🚀 Glide Through Your Folders
+## ✨ Features
 
-Hover over a folder and its submenu opens instantly. Browse directories
-infinitely deep through smooth cascading menus without repeatedly
-clicking.
+### 🚀 Infinite Cascading Navigation
 
-### 🎯 Stay Focused
+Browse folders by simply hovering over them. Submenus open instantly, allowing you to navigate deeply nested directories in seconds.
 
-Launch files, open projects, or inspect file properties directly from
-the top panel. Your **Home** folder and **GTK/Nautilus Bookmarks** are
-available immediately.
+### 🏠 Built-in Bookmarks
 
-### ⚡ Fast, Even With Huge Folders
+Your **Home** folder and **GTK/Nautilus Bookmarks** are available immediately.
 
-Built for modern GNOME using asynchronous Gio file enumeration and
-hardware-accelerated animations. Even folders containing thousands of
-files won't freeze GNOME Shell.
+### ⚡ Fast & Responsive
 
-### 🎨 Make It Yours
+Uses asynchronous **Gio** file enumeration, so even directories containing thousands of files won't freeze GNOME Shell.
 
-Customize nearly everything:
+### 🖱 Native GNOME Behavior
 
--   Menu dimensions, spacing and border radius
--   Fonts
--   Colors and opacity
--   Hover animations
--   Shadows
--   Menu position and offsets
--   Open/Close delays and animation speed
+- **Left Click:** Open files or folders.
+- **Right Click:** Open the item's **Properties** dialog.
 
-------------------------------------------------------------------------
+### 🎨 Highly Customizable
+
+- Size, padding and margins
+- Fonts
+- Colors and opacity
+- Hover animations
+- Border radius and shadows
+- Menu position and offsets
+- Open/Close delays and animation speed
+
+---
 
 ## 📦 Installation
 
-### Method 1 --- GNOME Extensions (Recommended)
+### Option 1 — GNOME Extensions (Coming Soon)
 
-After the extension is approved and published on
-**extensions.gnome.org**, you'll be able to install it with a single
-click.
+This extension has been submitted to **extensions.gnome.org** and is currently awaiting review.
 
-> **Note:** The store link is intentionally omitted until approval
-> because it does not exist yet.
+Once it is approved, this README will be updated with the official one-click installation link.
 
-### Method 2 --- Manual Installation
+### Option 2 — Install from Source
 
-Clone the repository:
-
-``` bash
+```bash
 git clone https://github.com/vaibhavpatidar0079/files-dropdown.git
-```
+cd files-dropdown
 
-Copy the extension into your local extensions directory:
-
-``` bash
 mkdir -p ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com
-cp -r files-dropdown/* ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com/
-```
+cp -r . ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com/
 
-Compile the schemas:
-
-``` bash
 glib-compile-schemas ~/.local/share/gnome-shell/extensions/files-dropdown@vaibhavpatidar0079.github.com/schemas
 ```
 
 Restart GNOME Shell:
 
--   **Wayland:** Log out and log back in.
--   **X11:** Press `Alt + F2`, type `r`, then press **Enter**.
+- **Wayland:** Log out and back in.
+- **X11:** Press `Alt + F2`, type `r`, then press **Enter**.
 
 Enable **Files Dropdown** using the **Extensions** application.
 
-------------------------------------------------------------------------
+---
 
-## 🖥️ Compatibility
+## 🖥 Compatibility
 
--   GNOME Shell **45--50**
--   ECMAScript Modules (ESM)
+- GNOME Shell **45–50**
+- ECMAScript Modules (ESM)
 
-------------------------------------------------------------------------
+---
 
 ## 🤝 Contributing
 
-Contributions, bug reports and feature requests are always welcome.
+Contributions, bug reports, and feature requests are welcome.
 
-1.  Fork the repository
-2.  Create a feature branch
-3.  Commit your changes
-4.  Push your branch
-5.  Open a Pull Request
-
-------------------------------------------------------------------------
+---
 
 ## 📝 License
 
-Licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+Distributed under the **GNU General Public License v3.0 (GPL-3.0)**.
