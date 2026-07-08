@@ -1,0 +1,16 @@
+{
+  "uuid": "files-dropdown@vaibhavpatidar0079.github.com",
+  "name": "Files Dropdown",
+  "description": "Browse files and folders directly from the GNOME top panel.",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.files-dropdown",
+  "url": "https://github.com/vaibhavpatidar0079/files-dropdown",
+  "version": 1
+}

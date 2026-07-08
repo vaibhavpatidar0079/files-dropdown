@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.files-dropdown" path="/org/gnome/shell/extensions/files-dropdown/">
+
+    <!-- Behavior -->
+    <!-- STREAMING_CHUNK:Configuring behavior defaults... -->
+    <key name="keep-open" type="b"><default>false</default></key>
+    <key name="open-delay" type="i"><default>110</default></key>
+    <key name="close-delay" type="i"><default>120</default></key>
+    <key name="transition-duration" type="i"><default>200</default></key>
+
+    <!-- Top Panel Button -->
+    <!-- STREAMING_CHUNK:Configuring panel button defaults... -->
+    <key name="panel-show-icon" type="b"><default>true</default></key>
+    <key name="panel-icon-size" type="i"><default>20</default></key>
+    <key name="panel-icon-color" type="s"><default>'#eeeeee'</default></key>
+    <key name="panel-show-text" type="b"><default>false</default></key>
+    <key name="panel-text" type="s"><default>'Places'</default></key>
+    <key name="panel-text-color" type="s"><default>'#eeeeee'</default></key>
+
+    <!-- Menu Dimensions & Positioning -->
+    <!-- STREAMING_CHUNK:Configuring menu dimensions and positions... -->
+    <key name="menu-width-mode" type="s"><default>'max'</default></key>
+    <key name="menu-width-value" type="i"><default>400</default></key>
+    <key name="menu-height-mode" type="s"><default>'auto'</default></key>
+    <key name="menu-height-value" type="i"><default>500</default></key>
+    <key name="root-x-offset" type="i"><default>-45</default></key>
+    <key name="root-y-offset" type="i"><default>0</default></key>
+    <key name="child-x-offset" type="i"><default>0</default></key>
+    <key name="child-y-offset" type="i"><default>-10</default></key>
+    <key name="submenu-direction" type="s"><default>'auto'</default></key>
+    <key name="scrollbar-policy" type="s"><default>'auto'</default></key>
+
+    <!-- Menu Container (Global Box) -->
+    <!-- STREAMING_CHUNK:Configuring menu container styles... -->
+    <key name="menu-bg-color" type="s"><default>'rgb(15,15,15)'</default></key>
+    <key name="menu-border-color" type="s"><default>'rgba(255, 255, 255, 0.1)'</default></key>
+    <key name="menu-border-width" type="i"><default>0</default></key>
+    <key name="menu-border-radius" type="i"><default>12</default></key>
+    <key name="menu-pad-top" type="i"><default>8</default></key>
+    <key name="menu-pad-bottom" type="i"><default>8</default></key>
+    <key name="menu-pad-left" type="i"><default>0</default></key>
+    <key name="menu-pad-right" type="i"><default>0</default></key>
+    <key name="menu-shadow" type="b"><default>true</default></key>
+
+    <!-- Menu Items (Layout & Spacing) -->
+    <!-- STREAMING_CHUNK:Configuring menu items layout... -->
+    <key name="item-pad-top" type="i"><default>8</default></key>
+    <key name="item-pad-bottom" type="i"><default>8</default></key>
+    <key name="item-pad-left" type="i"><default>15</default></key>
+    <key name="item-pad-right" type="i"><default>15</default></key>
+    <key name="item-mar-v" type="i"><default>0</default></key>
+    <key name="item-mar-h" type="i"><default>0</default></key>
+    <key name="item-radius" type="i"><default>8</default></key>
+    <key name="item-border-width" type="i"><default>0</default></key>
+    <key name="item-border-color" type="s"><default>'rgba(255, 255, 255, 0)'</default></key>
+
+    <!-- Menu Items (Icons & Arrows) -->
+    <!-- STREAMING_CHUNK:Configuring icons and typography... -->
+    <key name="show-icons" type="b"><default>true</default></key>
+    <key name="item-icon-size" type="i"><default>16</default></key>
+    <key name="item-icon-gap" type="i"><default>10</default></key>
+    <key name="show-arrows" type="b"><default>true</default></key>
+    <key name="item-arrow-size" type="i"><default>16</default></key>
+    <key name="item-arrow-gap" type="i"><default>10</default></key>
+
+    <!-- Typography -->
+    <key name="font-family" type="s"><default>'sans-serif'</default></key>
+    <key name="font-size" type="i"><default>14</default></key>
+    <key name="font-weight" type="s"><default>'normal'</default></key>
+    <key name="item-text-align" type="s"><default>'left'</default></key>
+
+    <!-- States: Normal -->
+    <!-- STREAMING_CHUNK:Configuring state colors... -->
+    <key name="color-normal-bg" type="s"><default>'transparent'</default></key>
+    <key name="color-normal-text" type="s"><default>'#eeeeee'</default></key>
+
+    <!-- States: Hover Animations & Colors -->
+    <key name="color-hover-bg" type="s"><default>'rgba(255, 255, 255, 0.1)'</default></key>
+    <key name="color-hover-text" type="s"><default>'#ffffff'</default></key>
+
+    <!-- States: Active Ancestor (Parent of open folder) -->
+    <key name="color-active-bg" type="s"><default>'rgba(255,255,255,0.1)'</default></key>
+    <key name="color-active-text" type="s"><default>'#ffffff'</default></key>
+
+    <!-- Empty Folder Settings -->
+    <key name="empty-text" type="s"><default>'Empty Folder'</default></key>
+    <key name="color-empty-text" type="s"><default>'rgba(128, 128, 128, 0.7)'</default></key>
+
+  </schema>
+</schemalist>

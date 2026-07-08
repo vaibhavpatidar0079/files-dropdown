@@ -1,0 +1,7 @@
+.cascading-menu-custom StScrollView {
+    padding: 0; /* Force GNOME to respect your slider padding instead of standard item heights */
+}
+
+.custom-places-item {
+    min-height: 0px !important;
+}
